@@ -1,25 +1,25 @@
 <div class="float-parent-element">
     <div class="float-child-element">
-        <form name="ContactUs" class="contact-us" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+        <form name="contact" action="POST" data-netlify="true" class="contact-us" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
             <h1>Want to estimate a project?</h1>
             <p>Just tell us about your project, what are your goals, and let's start.</p>
 
             <mat-form-field appearance="outline">
                 <label for="contacts-form-name">Your name</label>
-                <input matInput type="text" formControlName="name" placeholder="John Doe" [value]="name" name="Name">
+                <input matInput type="text" formControlName="name" placeholder="John Doe" [value]="name" name="name">
                 <mat-icon matSuffix>text_rotation_none</mat-icon>
             </mat-form-field>
 
             <mat-form-field appearance="outline">
                 <label for="contacts-form-email">Email</label>
-                <input matInput type="email" formControlName="email" placeholder="john@doe.com" [value]="email" name="Email">
+                <input matInput type="email" formControlName="email" placeholder="john@doe.com" [value]="email" name="email">
                 <mat-icon matSuffix>alternate_email</mat-icon>
             </mat-form-field>
 
             <mat-form-field appearance="outline">
                 <label for="contacts-form-message">Message</label>
                 <textarea matInput formControlName="message" placeholder="I'd like to get an estimate on a project" [value]="message"
-                    name="Message"></textarea>
+                    name="message"></textarea>
                 <mat-icon matSuffix> mail_outline</mat-icon>
             </mat-form-field>
 
