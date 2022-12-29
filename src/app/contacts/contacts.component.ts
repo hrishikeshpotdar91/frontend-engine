@@ -35,16 +35,24 @@ export class ContactsComponent implements OnInit {
   onSubmit() {
     this.netlifyForms.submitContacts(this.FormData.value).subscribe(
        () => {
-         this.FormData.reset();
+        this.FormData.reset();
+
+        Object.keys(this.FormData.controls).forEach(key =>{
+          this.FormData.controls[key].setErrors(null)
+       });
 
          this._snackBar.open('We have received your message, we shall get back to you within 2/3 business days', 'Great!');
        },
        err => {
-        this._snackBar.open('Sorry something went wrong', 'Try again');
+
+        this.FormData.reset();
+
+        Object.keys(this.FormData.controls).forEach(key =>{
+          this.FormData.controls[key].setErrors(null)
+       });
+
+        this._snackBar.open('Sorry something went wrong', ' I`ll try again');
        }
      );
     }
-    
-  
-
 }

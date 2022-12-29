@@ -1,52 +1,33 @@
-<div class="float-parent-element">
-    <div class="float-child-element">
-        <form name="contact" class="contact-us" [formGroup]="FormData" (ngSubmit)="onSubmit()">
-            <h1>Want to estimate a project?</h1>
-            <p>Just tell us about your project, what are your goals, and let's start.</p>
-
+<mat-card class="mat-elevation-z5">
+    <mat-card-title> Want to estimate a project?
+    </mat-card-title>
+    <mat-card-subtitle>
+        Just tell us about your project, what are your goals, and let's start.
+    </mat-card-subtitle>
+    <mat-card-content>
+        <form name="contact" [formGroup]="FormData" (ngSubmit)="onSubmit()">
             <mat-form-field appearance="outline">
                 <label for="contacts-form-name">Your name</label>
                 <input matInput type="text" formControlName="name" placeholder="John Doe" [value]="name" name="name">
                 <mat-icon matSuffix>text_rotation_none</mat-icon>
             </mat-form-field>
-
+        
             <mat-form-field appearance="outline">
                 <label for="contacts-form-email">Email</label>
                 <input matInput type="email" formControlName="email" placeholder="john@doe.com" [value]="email" name="email">
                 <mat-icon matSuffix>alternate_email</mat-icon>
             </mat-form-field>
-
+        
             <mat-form-field appearance="outline">
                 <label for="contacts-form-message">Message</label>
-                <textarea matInput formControlName="message" placeholder="I'd like to get an estimate on a project" [value]="message"
-                    name="message"></textarea>
+                <textarea matInput formControlName="message" placeholder="I'd like to get an estimate on a project"
+                    [value]="message" name="message"></textarea>
                 <mat-icon matSuffix> mail_outline</mat-icon>
+                <mat-hint> Feel free to attach any links for reference </mat-hint>
             </mat-form-field>
-
-            <button mat-raised-button type="submit" [disabled]="!FormData.valid">Submit</button>
+        
+            <button mat-raised-button class="submit-button-contacts" type="submit" [disabled]="!FormData.valid">Submit</button>
         </form>
-    </div>
-    <div class="float-child-element">
-        <div class="contact-us">
-            <div>
-                <h1 class="contacts__title">Email</h1>
-                <div class="contacts__info-email">frontendengine@gmail.com
-                    <div class="contacts__info-copy"></div>
-                    <div class="contacts__info-message">Email copied to clipboard</div>
-                </div>
-                <h1 class="contacts__title">Phones</h1>
-                <div class="contacts__info-row">
-                    <p>Pranav Kulkarni<br>
-                        <a href="tel:4373282883">+1 (437)328 2883</a>
-                    </p>
-                    <p>Hrishikesh Pothdar<br>
-                        <a href="tel:6822342481">+1 (682) 234 2481</a>
-                    </p>
-                </div>
-                <h1 class="contacts__title">Address</h1>
-                <address class="contacts__info-address">251 Jarvis St.,<br>Toronto, M5B 0C3,<br>Ontario, Canada
-                </address>
-            </div>
-        </div>
-    </div>
-</div>
+
+    </mat-card-content>
+    </mat-card>
