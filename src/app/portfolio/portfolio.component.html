@@ -1,93 +1,170 @@
+<mat-stepper orientation="horizontal" [linear]="false" headerPosition="bottom" #stepper class="colorb">
+  <mat-step label="Step 3" state="timeline" completed="false">
+    <mat-card  class="mat-elevation-z8 size-card">
+      <ng-template matStepLabel><h2>Taylor Morrison</h2></ng-template>
+      <a class="taylor-link" target="_blank"  href="https://www.taylormorrison.com/"><img  src="../../assets/taylor.svg"  class="thumbnail" width="350" height="200">
+      <mat-card-title class="textcolor"> Javascript (React) Web Development</mat-card-title>
+    </a>
+      <mat-card-content>
+        <mat-list role="list">
+          <mat-list-item role="listitem">
+            <mat-icon matListItemIcon>bubble_chart</mat-icon>
+            <span matListItemTitle>React</span>
+            Helping real estate leaders Taylor Morrison redesign their UI with react.
+          </mat-list-item>
+          <mat-list-item role="listitem" lines="3">
+            <mat-icon matListItemIcon>add_comment</mat-icon>
+            <span matListItemTitle>Mentoring</span>
+            Educating developers about React standards and practices & frontend streamlining with call-action-reducers & improving frontend state management.
+          </mat-list-item>
+          <mat-list-item role="listitem" lines="3">
+            <mat-icon matListItemIcon>directions_run</mat-icon>
+            <span matListItemTitle>Sprints</span>
+            keeping the show running, avoiding setbacks, peer reviewing code, 
+            helping fellow devs understand domain & how to approach their tickets.
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-step>
+  <mat-step label="Step 1" state="timeline" completed="false">
+    <mat-card  class="mat-elevation-z8 size-card">
+      <ng-template matStepLabel><h2>Citi</h2></ng-template>
+      <a target="_blank"  href="https://www.citigroup.com/citi/"><img  src="../../assets/citi.png"  class="thumbnail" width="350" height="200"></a>
+      
+      <mat-card-title class="textcolor">Performance Team - SDE Specialist (Angular)</mat-card-title>
+      <mat-card-content>
+        <p></p>
+        <mat-list role="list">
+          <mat-list-item role="listitem" lines="3">
+            <mat-icon matListItemIcon>psychology</mat-icon>
+            <span matListItemTitle>Web Performance</span>
+            Built a web performance analysis product working in a small team of frontend developers & closely with lighthouse.
+          </mat-list-item>
+          <mat-list-item role="listitem" lines="3">
+            <mat-icon matListItemIcon>construction</mat-icon>
+            <span matListItemTitle>Improvements</span>
+            looking for that extra edge and improvements to smoothen the end user's experience.
+          </mat-list-item>
+          <mat-list-item role="listitem" lines="3">
+            <mat-icon matListItemIcon>fireplace</mat-icon>
+            <span matListItemTitle>Lighthouse Analysis</span>
+            write core piece that leverages lighthouse/headless chrome to streamline analytics requests.
+          </mat-list-item>
+        </mat-list>
+      
+      </mat-card-content>
+    </mat-card>
+  </mat-step>
 
-  <mat-vertical-stepper [linear]="false" #stepper class="colorb" >
+    <mat-step label="Step 2" state="timeline" completed="false">
+    <mat-card  class="mat-elevation-z8 size-card">
+      <ng-template matStepLabel><h2>Consensus</h2></ng-template>
+      <a target="_blank"  href="https://www.consensus.com/careers/jobs/"><img  src="../../assets/consensus.svg"  class="thumbnail" width="350" height="200"></a>
+      <mat-card-title class="textcolor"> Fullstack Javascript Web Development</mat-card-title>
+      <mat-card-content>
+        <mat-list role="list">
+          <mat-list-item role="listitem" lines="3">
+            <mat-icon matListItemIcon>graphic_eq</mat-icon>
+            <span matListItemTitle>NGRX & Graph QL</span>
+            working with NGRX & Graph QL. (Similar to React / Redux state management), 
+            building a dashboard that facilitates cloud faxing solutions to several companies that use our product.</mat-list-item>
+          <mat-list-item role="listitem" lines="3">
+            <mat-icon matListItemIcon>settings</mat-icon>
+            <span matListItemTitle>Prototyping</span>
+            Responsible for everything frontend & architecting codebase, java prototyping solutions with groovy/thymeleaf.
+          </mat-list-item>
+          <mat-list-item role="listitem" lines="3">
+            <mat-icon matListItemIcon>new_releases</mat-icon>
+            <span matListItemTitle>Blockchain</span>
+            Blockchain solutions - Jsign (product) help with ethereum and smart contracts.
+          </mat-list-item>
+        </mat-list>
+
+      </mat-card-content>
+    </mat-card>
+  </mat-step>
+</mat-stepper>
+
+<mat-stepper orientation="horizontal" [linear]="false" headerPosition="bottom" #stepper class="colorb" [animationDuration]="'1000'">
     
-    <mat-step completed="false" >
+    <mat-step state="timeline" completed="false">
       <mat-card  class="mat-elevation-z8 size-card">
         <small> 10th May, 2012 </small>
         <ng-template  matStepLabel><h2>Ajackus</h2></ng-template>
         <a target="_blank"  href="https://www.ajackus.com"><img  src="../../assets/ajackus.png"  class="thumbnail" width="350" height="200"></a>
         
         <mat-card-title class="textcolor">Fullstack Developer</mat-card-title>
-        <mat-card-subtitle class="pad"><p>First 'job' 😀.
+        <mat-card-content><p>First 'job' 😀.
         Wordpress plugins & lots of UI work, learnt all the cute day to day job tricks whilst building Ajackus from ground up.
-        Although I've moved on it's great to see how well they're doing now, I'm a proud friend!</p></mat-card-subtitle>
+        Although I've moved on it's great to see how well they're doing now, I'm a proud friend!</p>
+      </mat-card-content>
        
       </mat-card>
     </mat-step>
 
 
-    <mat-step completed="false" >
-        <mat-card  class="mat-elevation-z8 size-card" >
+    <mat-step state="timeline" completed="false">
+        <mat-card  class="mat-elevation-z8 size-card">
           <ng-template  matStepLabel><h2>Dito Web</h2></ng-template>
           <a target="_blank"  href="https://www.ditoweb.com/"><img  src="../../assets/dito.png"  class="thumbnail" width="350" height="200"></a>
           
           <mat-card-title class="textcolor">Lead Frontend Developer
         </mat-card-title>
-          <mat-card-subtitle class="pad"><p>Client Dashboard for a California county, helping with foster kids management dashboard, team of 4, I was responsible for building the web dashboard</p></mat-card-subtitle>
+          <mat-card-content><p>Client Dashboard for a California county, helping with foster kids management dashboard, team of 4, I was responsible for building the web dashboard</p></mat-card-content>
          
         </mat-card>
       </mat-step>
 
 
-      <mat-step completed="false" >
-        <mat-card  class="mat-elevation-z8 size-card" >
+      <mat-step state="timeline" completed="false">
+        <mat-card  class="mat-elevation-z8 size-card">
           <ng-template  matStepLabel><h2>Motivity Labs</h2></ng-template>
           <a target="_blank"  href="https://motivitylabs.com/"><img  src="../../assets/motivity.png"  class="thumbnail" width="350" height="200"></a>
           
           <mat-card-title class="textcolor">Lead Frontend Developer</mat-card-title>
-          <mat-card-subtitle class="pad"><p>Started as a Junior, grew into the role, was promoted to a Senior position and eventually lead frontend as I took ownership of projects like Dito web & Keeptrax :), I grew as a developer in Motivity Labs the most & credit a lot of my dev learning to this company</p></mat-card-subtitle>
+          <mat-card-content><p>Started as a Junior, grew into the role, was promoted to a Senior position and eventually lead frontend as I took ownership of projects like Dito web & Keeptrax :), I grew as a developer in Motivity Labs the most & credit a lot of my dev learning to this company</p></mat-card-content>
          
         </mat-card>
-      </mat-step>
+      </mat-step>    
+  </mat-stepper>
+
+  <mat-stepper orientation="horizontal" [linear]="false" headerPosition="bottom" #stepper class="colorb">
+
+    <mat-step state="timeline" completed="false">
+      <mat-card  class="mat-elevation-z8 size-card">
+        <ng-template  matStepLabel><h2>KeepTrax</h2></ng-template>
+        <a target="_blank"  href="http://keeptraxapp.com/"><img  src="../../assets/keeptrax.png"  class="thumbnail" width="350" height="200"></a>
+        
+        <mat-card-title class="textcolor">Fullstack Developer</mat-card-title>
+        <mat-card-content><p>Web Dashboard to track delivery drivers.</p></mat-card-content>
+       
+      </mat-card>
+    </mat-step>
 
 
-      <mat-step completed="false" >
-        <mat-card  class="mat-elevation-z8 size-card" >
-          <ng-template  matStepLabel><h2>KeepTrax</h2></ng-template>
-          <a target="_blank"  href="http://keeptraxapp.com/"><img  src="../../assets/keeptrax.png"  class="thumbnail" width="350" height="200"></a>
-          
-          <mat-card-title class="textcolor">Fullstack Developer</mat-card-title>
-          <mat-card-subtitle class="pad"><p>Web Dashboard to track delivery drivers.</p></mat-card-subtitle>
-         
-        </mat-card>
-      </mat-step>
+    <mat-step state="timeline" completed="false">
+      <mat-card  class="mat-elevation-z8 size-card">
+        <ng-template  matStepLabel><h2>Lyra Influence</h2></ng-template>
+        <a target="_blank"  href="https://www.lyra-influence.com/"><img  src="../../assets/lyra.png" class="image-position-portfolio" width="350" height="200"></a>
+        
+        <mat-card-title class="textcolor">Core Team - Lead Frontend Developer</mat-card-title>
+        <mat-card-content><p>Ownership of the web dashboard. Responsible for web scalability, direction & performance updrages. Everything for the frontend.</p></mat-card-content>
+       
+      </mat-card>
+    </mat-step>
 
 
-      <mat-step completed="false" >
-        <mat-card  class="mat-elevation-z8 size-card" >
-          <ng-template  matStepLabel><h2>Lyra Influence</h2></ng-template>
-          <a target="_blank"  href="https://www.lyra-influence.com/"><img  src="../../assets/lyra.png" class="center" width="350" height="200"></a>
-          
-          <mat-card-title class="textcolor">Core Team - Lead Frontend Developer</mat-card-title>
-          <mat-card-subtitle class="pad"><p>Ownership of the web dashboard. Responsible for web scalability, direction & performance updrages. Everything for the frontend.</p></mat-card-subtitle>
-         
-        </mat-card>
-      </mat-step>
-
-
-      <mat-step completed="false" >
-        <mat-card  class="mat-elevation-z8 size-card" >
-          <ng-template  matStepLabel><h2>American Airlines</h2></ng-template>
-          <a target="_blank"  href="https://www.aa.com/homePage.do"><img  src="../../assets/aa.png"  class="thumbnail" width="350" height="200"></a>
-          
-          <mat-card-title class="textcolor">Platform (Core) Team</mat-card-title>
-          <mat-card-subtitle class="pad"><p>Working closely with the design team to create reusable components for the delivery teams to consume and expedite their development process.</p></mat-card-subtitle>
-         
-        </mat-card>
-      </mat-step>
-
-
-      <mat-step completed="false" >
-        <mat-card  class="mat-elevation-z8 size-card" >
-          <ng-template matStepLabel><h2>NTT Data</h2></ng-template>
-          <a target="_blank"  href="https://us.nttdata.com/en"><img  src="../../assets/ntt-data.png"  class="thumbnail" width="350" height="200"></a>
-          
-          <mat-card-title class="textcolor">Performance Team - SDE Specialist (Angular)</mat-card-title>
-          <mat-card-subtitle class="pad"><p>Working in a small team of frontend developers & closely with lighthouse, looking for that extra edge and improvements to smoothen the end user's experience.</p></mat-card-subtitle>
-         
-        </mat-card>
-      </mat-step>
-    
-    
-  </mat-vertical-stepper>
+    <mat-step state="timeline" completed="false">
+      <mat-card  class="mat-elevation-z8 size-card">
+        <ng-template  matStepLabel><h2>American Airlines</h2></ng-template>
+        <a target="_blank"  href="https://www.aa.com/homePage.do"><img  src="../../assets/aa.png"  class="thumbnail" width="350" height="200"></a>
+        
+        <mat-card-title class="textcolor">Platform (Core) Team</mat-card-title>
+        <mat-card-content><p>Working closely with the design team to create reusable components for the delivery teams to consume and expedite their development process.</p></mat-card-content>
+       
+      </mat-card>
+    </mat-step>
+  </mat-stepper>
+  
   

@@ -27,6 +27,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatListModule} from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -59,7 +61,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatInputModule,
     HttpClientModule,
     MatGridListModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
