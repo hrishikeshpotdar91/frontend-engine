@@ -4,9 +4,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HomeComponent } from './home/containers/home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { ProductsComponent } from './products/products.component';
-import { RProductComponent } from './r-product/r-product.component';
-import { ServicesComponent } from './services/services.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProductComponent } from './products/product.component';
 const routes: Routes = [
     
   {
@@ -15,24 +14,17 @@ const routes: Routes = [
   {
     path: 'home', component: HomeComponent
   },
-  
   {
-    path: 'r-products', component: RProductComponent
+    path: 'products', component: ProductComponent
   },
-  {
-    path: 'services', component: ServicesComponent
-  }
-  
-  ,{ path: 'about', component: AboutComponent },
+  { path: 'about', component: AboutComponent },
 
   { path: 'contact', component: ContactsComponent },
 
-  { path: 'products', component: ProductsComponent },
+  { path: 'portfolio', component: PortfolioComponent },
 
   { path: '**', pathMatch: 'full', 
         component: PagenotfoundComponent }
-        
-    
 ];
 
 @NgModule({

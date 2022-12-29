@@ -5,10 +5,10 @@ import {FormBuilder, FormGroup} from '@angular/forms';
  * @title Stepper animations
  */
 @Component({
-  selector: 'app-products',
-  templateUrl: 'products.component.html',
-  styleUrls: ['products.component.scss'],
+  selector: 'app-portfolio',
+  templateUrl: 'portfolio.component.html',
+  styleUrls: ['portfolio.component.scss'],
 })
-export class ProductsComponent {
+export class PortfolioComponent {
   
 }

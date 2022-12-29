@@ -8,7 +8,7 @@ import { HomeComponent } from './home/containers/home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-import { ProductsComponent } from './products/products.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,8 +22,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { RProductComponent } from './r-product/r-product.component';
-import { ServicesComponent } from './services/services.component';
+import { ProductComponent } from './products/product.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';  
 import { HttpClientModule } from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -37,12 +36,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    ProductsComponent,
+    ProductComponent,
     ContactsComponent,
     NavbarComponent,
-    RProductComponent,
-    ServicesComponent,
-    
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
