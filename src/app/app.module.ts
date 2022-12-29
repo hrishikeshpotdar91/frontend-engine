@@ -26,7 +26,6 @@ import { RProductComponent } from './r-product/r-product.component';
 import { ServicesComponent } from './services/services.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';  
 import { HttpClientModule } from '@angular/common/http';
-import { EmailService } from './email.service';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 
@@ -65,7 +64,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatGridListModule,
     MatSnackBarModule
   ],
-  providers: [EmailService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

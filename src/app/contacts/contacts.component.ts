@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { EmailService } from '../email.service';
 import { NetlifyFormsService } from '../netlify-forms.service';
 import {MatSnackBar, MatSnackBarRef} from '@angular/material/snack-bar';
 
@@ -18,8 +17,7 @@ export class ContactsComponent implements OnInit {
   message: string = "";
 
 
-  constructor(private builder: FormBuilder, 
-    private contact: EmailService, 
+  constructor(private builder: FormBuilder,
     private netlifyForms: NetlifyFormsService, 
     private router: Router,
     private _snackBar: MatSnackBar) {
@@ -33,17 +31,6 @@ export class ContactsComponent implements OnInit {
       message: new FormControl('', [Validators.required])
       })
   }
-
-  // onSubmit(FormData) {
-  //   this.contact.SendEmail(FormData)
-  //   .subscribe(response => {
-  //     location.href = location.origin + '/home';
-  //   }, error => {
-  //   console.warn(error.responseText)
-  //   console.log({ error })
-  // })
-  //   // send the name, email, and message to the server or email address
-  // }
 
   onSubmit() {
     this.netlifyForms.submitContacts(this.FormData.value).subscribe(
