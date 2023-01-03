@@ -4,27 +4,26 @@
 }
 
 .parent{
-    width: 100%;
-    margin: auto;
+   
     display: flex;
 }
 
 .child{
-    widht: 50%;
     margin: 20px;
 }
 
 .card{
-    padding: 10px;
+    
 }
 
 .column{
     
     text-align: center;
-    background-color: blue;
+    background-color: #004a9f;
     color: white;
     width: 100%;
     min-height: 45px;
+    padding: 5px;
 
 }
 
@@ -32,4 +31,45 @@
     text-decoration: none;
     color: orange;
     
+}
+
+
+.avatar {
+    
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 50%;
+    background: white;
+  }
+
+.mainParent{
+    background-color: lightgray;
+    padding: 10px;
+    margin: 20px;
+}
+  .intro{
+    
+    margin: 20px;
+    
+    
+    display: flex;
+}
+
+.introC{
+    width: 40%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.introP{
+    width: 60%;
+    margin: auto;
+    color: white;
+}
+.name{
+    text-align: center;
 }
