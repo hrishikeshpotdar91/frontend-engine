@@ -1,0 +1,35 @@
+.title{
+    text-align: center;
+    
+}
+
+.parent{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.child{
+    widht: 50%;
+    margin: 20px;
+}
+
+.card{
+    padding: 10px;
+}
+
+.column{
+    
+    text-align: center;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    min-height: 45px;
+
+}
+
+.demo{
+    text-decoration: none;
+    color: orange;
+    
+}

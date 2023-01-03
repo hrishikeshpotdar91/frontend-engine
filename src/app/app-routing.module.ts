@@ -6,6 +6,7 @@ import { HomeComponent } from './home/containers/home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProductComponent } from './products/product.component';
+import { TutoringComponent } from './tutoring/tutoring.component';
 const routes: Routes = [
     
   {
@@ -22,6 +23,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactsComponent },
 
   { path: 'portfolio', component: PortfolioComponent },
+
+  { path: 'tutoring', component: TutoringComponent },
 
   { path: '**', pathMatch: 'full', 
         component: PagenotfoundComponent }

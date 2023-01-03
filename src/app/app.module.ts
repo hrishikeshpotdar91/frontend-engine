@@ -30,7 +30,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatListModule} from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatSelectModule} from '@angular/material/select';
-
+import { TutoringComponent } from './tutoring/tutoring.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,8 @@ import {MatSelectModule} from '@angular/material/select';
     ProductComponent,
     ContactsComponent,
     NavbarComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    TutoringComponent
   ],
   imports: [
     BrowserModule,
