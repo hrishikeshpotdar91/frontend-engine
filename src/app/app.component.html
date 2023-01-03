@@ -1,21 +1,59 @@
-<!-- <div class="container">
-    <app-header></app-header>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
-  </div> -->
-
-<mat-toolbar color="warn">
-  <a class="main" routerLink="/home" ><span >ᖴᖇOᑎTEᑎᗪ EᑎGIᑎE</span></a>
-  <span class="spacer"></span>
-
-  <a class="frontend-engine-links" routerLink="/home"> <button mat-button>Services</button> </a>
-  <a class="frontend-engine-links" routerLink="/products"> <button mat-button>Products</button> </a>
-  <a class="frontend-engine-links" routerLink="/portfolio"> <button mat-button>Portfolio</button> </a>
-  <a class="frontend-engine-links" routerLink="/about"> <button mat-button>About</button> </a>
-  <a class="frontend-engine-links" routerLink="/contact"> <button mat-button>Contact</button> </a>
+<mat-toolbar class="mat-elevation-z8">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+  Frontend Engine
 </mat-toolbar>
 
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened #sidenav="matSidenav" class="mat-elevation-z8">
+    <img
+      class="avatar mat-elevation-z8"
+      src="../assets/FE-logo.png"
+    />
+
+    <p class="designation"> Your gateway to code.</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/home">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/portfolio">
+      <mat-icon>person</mat-icon>
+      <span>Our Work</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/about">
+      <mat-icon>info</mat-icon>
+      <span>About</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/products">
+      <mat-icon>person</mat-icon>
+      <span>Products</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/contact">
+      <mat-icon>info</mat-icon>
+      <span>Contact</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/contact">
+      <mat-icon>help</mat-icon>
+      <span>Help</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
 
-
-    <router-outlet></router-outlet>

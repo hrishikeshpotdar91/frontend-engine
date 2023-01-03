@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { BreakpointObserver } from '@angular/cdk/layout';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 import { ThemeService } from './theme-service.service';
 
 
@@ -7,16 +9,26 @@ import { ThemeService } from './theme-service.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'frontend-engine';
   theme: string;
 
-  constructor(private themeService: ThemeService) {
+  @ViewChild(MatSidenav)
+  sidenav!: MatSidenav;
+
+  constructor(private themeService: ThemeService, private observer: BreakpointObserver) {
     this.theme = this.themeService.getTheme();
   }
 
-  toggleTheme(event: any ) {
-    this.theme = event.checked ? 'dark-theme' : 'light-theme';
-    this.themeService.setTheme(this.theme);
+  ngAfterViewInit(): void {
+    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
+      if (res.matches) {
+        this.sidenav.mode = 'over';
+        this.sidenav.close();
+      } else {
+        this.sidenav.mode = 'side';
+        this.sidenav.open();
+      }
+    });
   }
 }

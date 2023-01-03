@@ -28,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatListModule} from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -62,7 +64,9 @@ import {MatListModule} from '@angular/material/list';
     HttpClientModule,
     MatGridListModule,
     MatSnackBarModule,
-    MatListModule
+    MatDividerModule,
+    MatListModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
