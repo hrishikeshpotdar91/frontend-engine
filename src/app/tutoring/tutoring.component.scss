@@ -1,5 +1,6 @@
 .title{
     text-align: center;
+    text-decoration: none;
     
 }
 
@@ -10,6 +11,8 @@
 
 .child{
     margin: 20px;
+    width: 50%;
+    
 }
 
 .card{
@@ -72,4 +75,72 @@
 }
 .name{
     text-align: center;
+}
+
+.par{
+    text-align: center;
+    background-color: #004a9f;
+    color: white;
+    padding: 5px;
+    margin: 20px;
+    
+
+}
+
+.chi{
+    width: 50%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.imga{
+    width: 372px;
+    
+}
+
+.parent1{
+   
+    display: flex;
+}
+
+.child1{
+    margin: 20px;
+    width: 70%;
+    
+}
+
+.child2{
+    margin: 20px;
+    width: 30%;
+    
+}
+
+.margin{
+    margin: 20px;
+    padding: 10px;
+    min-height: 500px;
+}
+
+.bookMeeting{
+    margin: 20px;
+    padding: 10px;
+    background: white;
+}
+
+.book{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        color: #004a9f;
+    }
+}
+
+.calendly-badge-content{
+    background: rgb(0, 105, 255); 
+    color: rgb(255, 255, 255);
 }

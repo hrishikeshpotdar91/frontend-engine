@@ -31,6 +31,7 @@ import {MatListModule} from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatSelectModule} from '@angular/material/select';
 import { TutoringComponent } from './tutoring/tutoring.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { TutoringComponent } from './tutoring/tutoring.component';
     MatSnackBarModule,
     MatDividerModule,
     MatListModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
