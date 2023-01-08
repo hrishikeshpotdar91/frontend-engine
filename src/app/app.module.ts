@@ -32,6 +32,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatSelectModule} from '@angular/material/select';
 import { TutoringComponent } from './tutoring/tutoring.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { MentoringComponent } from './mentoring/mentoring.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     ContactsComponent,
     NavbarComponent,
     PortfolioComponent,
-    TutoringComponent
+    TutoringComponent,
+    MentoringComponent
   ],
   imports: [
     BrowserModule,

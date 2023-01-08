@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HomeComponent } from './home/containers/home/home.component';
+import { MentoringComponent } from './mentoring/mentoring.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProductComponent } from './products/product.component';
@@ -25,6 +26,8 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
 
   { path: 'tutoring', component: TutoringComponent },
+
+  { path: 'mentoring', component: MentoringComponent },
 
   { path: '**', pathMatch: 'full', 
         component: PagenotfoundComponent }

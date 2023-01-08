@@ -1,0 +1,146 @@
+.title{
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.parent{
+   
+    display: flex;
+}
+
+.child{
+    margin: 20px;
+    width: 50%;
+    
+}
+
+.card{
+    
+}
+
+.column{
+    
+    text-align: center;
+    background-color: #004a9f;
+    color: white;
+    width: 100%;
+    min-height: 45px;
+    padding: 5px;
+
+}
+
+.demo{
+    text-decoration: none;
+    color: orange;
+    
+}
+
+
+.avatar {
+    
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 50%;
+    background: white;
+  }
+
+.mainParent{
+    background-color: lightgray;
+    padding: 10px;
+    margin: 20px;
+}
+  .intro{
+    
+    margin: 20px;
+    
+    
+    display: flex;
+}
+
+.introC{
+    width: 40%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.introP{
+    width: 60%;
+    margin: auto;
+    color: white;
+}
+.name{
+    text-align: center;
+}
+
+.par{
+    text-align: center;
+    background-color: #004a9f;
+    color: white;
+    padding: 5px;
+    margin: 20px;
+    
+
+}
+
+.chi{
+    width: 50%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.imga{
+    width: 372px;
+    
+}
+
+.parent1{
+   
+    display: flex;
+}
+
+.child1{
+    margin: 20px;
+    width: 70%;
+    
+}
+
+.child2{
+    margin: 20px;
+    width: 30%;
+    
+}
+
+.margin{
+    margin: 20px;
+    padding: 10px;
+    min-height: 500px;
+}
+
+.bookMeeting{
+    margin: 20px;
+    padding: 10px;
+    background: white;
+}
+
+.book{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        color: #004a9f;
+    }
+}
+
+.calendly-badge-content{
+    background: rgb(0, 105, 255); 
+    color: rgb(255, 255, 255);
+}
