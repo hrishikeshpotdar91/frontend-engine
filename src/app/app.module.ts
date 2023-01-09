@@ -33,6 +33,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { TutoringComponent } from './tutoring/tutoring.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { MentoringComponent } from './mentoring/mentoring.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 @NgModule({
   declarations: [
@@ -71,7 +73,8 @@ import { MentoringComponent } from './mentoring/mentoring.component';
     MatDividerModule,
     MatListModule,
     MatSelectModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
