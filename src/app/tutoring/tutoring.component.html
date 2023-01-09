@@ -5,23 +5,23 @@
             <mat-list>
                 <div class="title" mat-subheader><h2>Course Outcomes</h2></div>
                 <mat-list-item >
-                  <mat-icon matListItemIcon>code</mat-icon>
+                  <mat-icon matListItemIcon [ngStyle]="{'color' : 'red'}" >code</mat-icon>
                   <div matListItemTitle matTooltip="Learn basic programming constructs using JAVA">Learn basic programming constructs using JAVA</div>
                 </mat-list-item>
                 <mat-list-item >
-                    <mat-icon matListItemIcon>code</mat-icon>
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'red'}" >code</mat-icon>
                     <div matListItemTitle matTooltip="Learn all OOP (Object Oriented Programming) concepts with examples">Learn all OOP (Object Oriented Programming) concepts with examples</div>
                   </mat-list-item>
                   <mat-list-item >
-                    <mat-icon matListItemIcon>code</mat-icon>
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'red'}" >code</mat-icon>
                     <div matListItemTitle matTooltip="Learn application of OOP in BackEnd Development">Learn application of OOP in BackEnd Development</div>
                   </mat-list-item>
                   <mat-list-item >
-                    <mat-icon matListItemIcon>code</mat-icon>
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'red'}" >code</mat-icon>
                     <div matListItemTitle matTooltip="Assure an 'A' grade in all JAVA  courses">Assure an 'A' grade in all JAVA  courses</div>
                   </mat-list-item>
                   <mat-list-item >
-                    <mat-icon matListItemIcon>code</mat-icon>
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'red'}" >code</mat-icon>
                     <div matListItemTitle matTooltip="Build a strong foundation of coding">Build a strong foundation of coding</div>
                   </mat-list-item>
                   
@@ -34,23 +34,23 @@
             <mat-list>
                 <div class="title" mat-subheader><h2>Course Perks!</h2></div>
                 <mat-list-item >
-                  <mat-icon matListItemIcon>grade</mat-icon>
+                  <mat-icon matListItemIcon [ngStyle]="{'color' : 'gold'}" >grade</mat-icon>
                   <div matListItemTitle matTooltip="No prior knowledge required">No prior knowledge required</div>
                 </mat-list-item>
                 <mat-list-item >
-                    <mat-icon matListItemIcon>grade</mat-icon>
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'gold'}">grade</mat-icon>
                     <div matListItemTitle matTooltip="24/7 virtual assistance and in-person assistance on prior booking avaliable">24/7 virtual assistance and in-person assistance on prior booking avaliable</div>
                   </mat-list-item>
                   <mat-list-item >
-                    <mat-icon matListItemIcon>grade</mat-icon>
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'gold'}">grade</mat-icon>
                     <div matListItemTitle matTooltip="Get a head-start in the real coding world" >Get a head-start in the real coding world</div>
                   </mat-list-item>
                   <mat-list-item >
-                    <mat-icon matListItemIcon>grade</mat-icon>
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'gold'}">grade</mat-icon>
                     <div matListItemTitle matTooltip="Completion Certificate given after course completion">Completion Certificate given after course completion</div>
                   </mat-list-item>
                   <mat-list-item >
-                    <mat-icon matListItemIcon>grade</mat-icon>
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'gold'}">grade</mat-icon>
                     <div matListItemTitle matTooltip="Personal in-perrson sessions also availiable on prior booking">Personal in-perrson sessions also availiable on prior booking</div>
                   </mat-list-item>
                   
@@ -103,6 +103,7 @@
     
     <div class="chi">
         <div><h2>Schedule a meeting with our Instructor to customize your personalized seesions </h2></div>
+        <div ><h2><a class="demo" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/frontendengine/customize-your-classes'});return false;">Book a session now!</a></h2></div>
     </div>
 
 </div>
@@ -144,11 +145,44 @@
     </div>
 </div>
 
+<div class="par">
+  <h1 class="title">Have problems while coding?</h1>
+  
+  <div >
+      <div class="chi"><h2>Schedule a meeting with our Instructor to troubleshoot your problems and find solutions immediately</h2></div>
+      <div ><h2><a class="demo" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/frontendengine/troubleshooting'});return false;">Book a session now!</a></h2></div>
+  </div>
+
+</div>
+
 <div>
     <mat-card class="margin mat-elevation-z8">
         <h1 class="title">What will Students Learn?</h1>
         <mat-tab-group animationDuration="1000ms">
-             <mat-tab label="Extra Demo Class">Content to be filled</mat-tab>
+             <mat-tab class="learnings" label="Extra Demo Class">
+                <mat-list>
+                  <mat-list-item >
+                    <mat-icon matListItemIcon [ngStyle]="{'color' : 'green'}" >check_circle</mat-icon>
+                    <div matListItemTitle matTooltip="Learn basic programming constructs using JAVA">Learn basic programming constructs using JAVA</div>
+                  </mat-list-item>
+                  <mat-list-item >
+                      <mat-icon matListItemIcon [ngStyle]="{'color' : 'green'}" >check_circle</mat-icon>
+                      <div matListItemTitle matTooltip="Learn all OOP (Object Oriented Programming) concepts with examples">Learn all OOP (Object Oriented Programming) concepts with examples</div>
+                    </mat-list-item>
+                    <mat-list-item >
+                      <mat-icon matListItemIcon [ngStyle]="{'color' : 'green'}" >check_circle</mat-icon>
+                      <div matListItemTitle matTooltip="Learn application of OOP in BackEnd Development">Learn application of OOP in BackEnd Development</div>
+                    </mat-list-item>
+                    <mat-list-item >
+                      <mat-icon matListItemIcon [ngStyle]="{'color' : 'green'}" >check_circle</mat-icon>
+                      <div matListItemTitle matTooltip="Assure an 'A' grade in all JAVA  courses">Assure an 'A' grade in all JAVA  courses</div>
+                    </mat-list-item>
+                    <mat-list-item >
+                      <mat-icon matListItemIcon [ngStyle]="{'color' : 'green'}" >check_circle</mat-icon>
+                      <div matListItemTitle matTooltip="Build a strong foundation of coding">Build a strong foundation of coding</div>
+                    </mat-list-item>
+                </mat-list>
+             </mat-tab>
             <mat-tab label="1 personalized session">Content to be filled</mat-tab>
              <mat-tab label="10 sessions Package">Content to be filled</mat-tab>
              <mat-tab label="20 sessions Package">Content to be filled</mat-tab>
