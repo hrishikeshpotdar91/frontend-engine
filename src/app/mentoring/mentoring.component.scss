@@ -102,8 +102,10 @@
 }
 
 .parent1{
-   
     display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
 }
 
 .child1{
@@ -134,6 +136,7 @@
     text-align: center;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 
     &:hover{
         color: #004a9f;
@@ -144,3 +147,48 @@
     background: rgb(0, 105, 255); 
     color: rgb(255, 255, 255);
 }
+
+
+@media only screen and (max-width: 768px) {
+    .parent {
+      flex-direction: column;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .introC {
+        width: 100%;
+        display: flex;
+    }
+
+    .introP {
+        width: 100%;
+        
+    }
+
+    .parent1 {
+        flex-direction: column;
+    }
+
+    .child1 {
+        width: 100%;
+        
+    }
+
+    .mainParent {
+        padding: 0;
+        margin: 0;
+    }
+
+    .child2 {
+        width: 100%;
+        
+    }
+    
+  }
