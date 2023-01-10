@@ -23,7 +23,7 @@
                 <textarea matInput formControlName="message" placeholder="I'd like to get an estimate on a project"
                     [value]="message" name="message"></textarea>
                 <mat-icon matSuffix> mail_outline</mat-icon>
-                <mat-hint> Feel free to attach any links for us to better understand how we can help you. </mat-hint>
+                <mat-hint> Feel free to attach any reference links </mat-hint>
             </mat-form-field>
         
             <button mat-raised-button class="submit-button-contacts" type="submit" [disabled]="!FormData.valid">Submit</button>
@@ -31,11 +31,3 @@
 
     </mat-card-content>
     </mat-card>
-
-    <footer>
-        <p>Copyright 2022 HrishiPranavFrontend</p>
-    <ul>
-      <li><a href="#">Terms of Service</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-    </footer>

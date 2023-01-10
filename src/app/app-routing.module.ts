@@ -16,14 +16,12 @@ const routes: Routes = [
   {
     path: 'home', component: HomeComponent
   },
-  {
-    path: 'products', component: ProductComponent
-  },
-  { path: 'about', component: AboutComponent },
+ // { path: 'products', component: ProductComponent },
+ // { path: 'about', component: AboutComponent },
 
   { path: 'contact', component: ContactsComponent },
 
-  { path: 'portfolio', component: PortfolioComponent },
+ // { path: 'portfolio', component: PortfolioComponent },
 
   { path: 'tutoring', component: TutoringComponent },
 

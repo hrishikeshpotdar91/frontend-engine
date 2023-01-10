@@ -11,8 +11,8 @@
   </button>
   <a class="mainName" routerLink="/home"> <button mat-button><h4>ᖴᖇOᑎTEᑎᗪ EᑎGIᑎE</h4></button> </a>
   <span class="spacer"></span>
-  <a class="frontend-engine-links" routerLink="/tutoring"> <button mat-button><h5>Tutoring</h5></button> </a>
-  <a class="frontend-engine-links" routerLink="/mentoring"> <button mat-button><h5>Mentoring</h5></button> </a>
+  <a class="frontend-engine-links hide-sm" routerLink="/tutoring"> <button mat-button><h5>Tutoring</h5></button> </a>
+  <a class="frontend-engine-links hide-sm" routerLink="/mentoring"> <button mat-button><h5>Mentoring</h5></button> </a>
 </mat-toolbar>
 
 <mat-sidenav-container>
@@ -30,20 +30,28 @@
       <mat-icon>home</mat-icon>
       <span>Home</span>
     </button>
-    <button mat-button class="menu-button" routerLink="/portfolio">
+    <!-- <button mat-button class="menu-button" routerLink="/portfolio">
       <mat-icon>person</mat-icon>
       <span>Our Work</span>
-    </button>
-    <button mat-button class="menu-button" routerLink="/about">
+    </button> -->
+    <!-- <button mat-button class="menu-button" routerLink="/about">
       <mat-icon>info</mat-icon>
       <span>About</span>
-    </button>
-    <button mat-button class="menu-button" routerLink="/products">
+    </button> -->
+    <!-- <button mat-button class="menu-button" routerLink="/products">
       <mat-icon>person</mat-icon>
       <span>Products</span>
+    </button> -->
+    <button mat-button class="menu-button" routerLink="/mentoring">
+      <mat-icon>local_library</mat-icon>
+      <span>Mentoring</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/tutoring">
+      <mat-icon>person_pin</mat-icon>
+      <span>Tutoring</span>
     </button>
     <button mat-button class="menu-button" routerLink="/contact">
-      <mat-icon>info</mat-icon>
+      <mat-icon>calendar_today</mat-icon>
       <span>Contact</span>
     </button>
 
@@ -55,9 +63,7 @@
     </button>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div class="content mat-elevation-z8">
       <router-outlet></router-outlet>
-    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
