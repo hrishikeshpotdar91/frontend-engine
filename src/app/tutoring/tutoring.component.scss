@@ -1,29 +1,27 @@
-.title{
+.title {
     text-align: center;
     text-decoration: none;
-    
+
 }
 
-.parent{
-   
+.parent {
+
     display: flex;
     margin: 10px;
 }
 
-.child{
+.child {
     margin: 20px;
     width: 50%;
     overflow: hidden;
     white-space: nowrap;
-    
+
 }
 
-.card{
-    
-}
+.card {}
 
-.column{
-    
+.column {
+
     text-align: center;
     background-color: #004a9f;
     color: white;
@@ -33,135 +31,139 @@
 
 }
 
-.demo{
+.demo {
     text-decoration: none;
     color: orange;
-    
+
     &:hover {
         color: yellow;
     }
-    
+
 }
 
 
 .avatar {
-    
+
     width: 200px;
     height: 200px;
     padding: 10px;
     border-radius: 50%;
     background: white;
-  }
+}
 
-.mainParent{
+.mainParent {
     background-color: lightgray;
     padding: 10px;
     margin: 20px;
 }
-  .intro{
-    
+
+.intro {
+
     margin: 20px;
-    
-    
+
+
     display: flex;
 }
 
-.introC{
+.introC {
     width: 40%;
-    
+
     display: flex;
     align-items: center;
     flex-direction: column;
 
 }
 
-.introP{
+.introP {
     width: 60%;
     margin: auto;
     color: white;
 }
-.name{
+
+.name {
     text-align: center;
 }
 
-.par{
+.par {
     text-align: center;
     background-color: #004a9f;
     color: white;
     padding: 5px;
     margin: 20px;
-    
+
 
 }
 
-.chi{
+.chi {
     width: 50%;
     margin: auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.imga{
+.imga {
     width: 372px;
-    
+
 }
 
-.parent1{
-   
+.parent1 {
+
     display: flex;
 }
 
-.child1{
+.child1 {
     margin: 20px;
     width: 70%;
-    
+
 }
 
-.child2{
+.child2 {
     margin: 20px;
     width: 30%;
-    
+
 }
 
-.margin{
+.margin {
     margin: 20px;
     padding: 10px;
     min-height: 500px;
 }
 
-.bookMeeting{
+.bookMeeting {
     margin: 20px;
     padding: 10px;
     background: white;
 }
 
-.book{
+.book {
     text-align: center;
     text-decoration: none;
     color: black;
 
-    
+    &:hover {
+        color: #004a9f;
+    }
 }
 
-.content{
+.content {
     word-wrap: break-word;
 }
 
-.learnings{
+.learnings {
     padding: 10px;
     margin: 10px;
 }
 
-.testi{
+.testi {
     padding: 10px;
     margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.testipic{
+.testipic {
     color: #AA336A;
     font-size: 150px;
     margin: 30px 0px 14px 0;
@@ -171,26 +173,27 @@
     align-self: start;
 }
 
-.mainTesti{
+.mainTesti {
     background-color: lightgray;
     padding: 10px;
     margin: 20px;
     min-height: 350px;
-    
-}
-.parentT{
-    display: flex;
-    width:100%;
+
 }
 
-.childT{
+.parentT {
+    display: flex;
+    width: 100%;
+}
+
+.childT {
     margin: 10px;
     padding: 10px;
     width: 25%;
     height: 250px;
 }
 
-.textT{
+.textT {
     margin: 10px;
     padding: 10px;
 }
@@ -202,7 +205,7 @@
 
 @media only screen and (max-width: 768px) {
     .parent {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .child {
@@ -220,7 +223,7 @@
 
     .introP {
         width: 100%;
-        
+
     }
 
     .parent1 {
@@ -234,12 +237,37 @@
 
     .child1 {
         width: 100%;
-        
+
     }
 
     .child2 {
         width: 100%;
-        
+
     }
-    
-  }
+
+    .parentT {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .childT {
+        margin: 10px;
+        padding: 0;
+        width: initial;
+        height: initial;
+    }
+
+    .whatsapp {
+        width: 230px;
+    }
+
+    .chi {
+        width: initial;
+    padding: 10px;
+    font-weight: 100;
+    margin: auto;
+    font-size: 12px;
+    }
+
+}
