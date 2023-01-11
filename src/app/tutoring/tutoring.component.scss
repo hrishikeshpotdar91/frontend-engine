@@ -142,9 +142,7 @@
     text-decoration: none;
     color: black;
 
-    &:hover{
-        color: #004a9f;
-    }
+    
 }
 
 .content{
@@ -195,6 +193,11 @@
 .textT{
     margin: 10px;
     padding: 10px;
+}
+
+.book_session{
+    padding: 10px;
+    margin: 10px;
 }
 
 @media only screen and (max-width: 768px) {
