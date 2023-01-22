@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -34,7 +33,14 @@ import { TutoringComponent } from './tutoring/tutoring.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { MentoringComponent } from './mentoring/mentoring.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
-
+import { BlogComponent } from './blog/blog.component';
+import { DynamicModule } from 'ng-dynamic-component';
+import { StoryblokService } from './services/storyblok.service';
+import { StoryblokDirective } from './directives/storyblok.directive';
+import { TeaserComponent } from './teaser/teaser.component';
+import { GridComponent } from './grid/grid.component';
+import { PageComponent } from './page/page.component';
+import { FeatureComponent } from './feature/feature.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +55,14 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     NavbarComponent,
     PortfolioComponent,
     TutoringComponent,
-    MentoringComponent
+    MentoringComponent,
+    BlogComponent,
+    PageComponent,
+    StoryblokDirective,
+    TeaserComponent,
+    GridComponent,
+    FeatureComponent,
+    StoryblokDirective
   ],
   imports: [
     BrowserModule,
@@ -74,9 +87,11 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatListModule,
     MatSelectModule,
     MatTabsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    DynamicModule
   ],
-  providers: [],
+  exports: [BrowserModule, DynamicModule],
+  providers: [StoryblokService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
